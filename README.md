@@ -12,6 +12,12 @@ Some coding problems in Java.
 ### Binary Tree
 
 * Maximum Path Sum (?)
+* Longest Increasing Path
+
+### Divide and Conquer
+
+* Quick Sort (No duplicates)
+* Merge Sort
 
 ### Dynamic Programming
 
@@ -39,6 +45,7 @@ Some coding problems in Java.
 * Linked List Node
 * A-Z Trie Node (Use array of 26. Supports character a-zA-Z)
 * Map Trie Node (Use hash map. Generics)
+* Array Interval Map (1,3,5,7; 1=>1, 2=>1, 3=>3, 4=>3, 7=>7, 8=>7, 9=>7)
 
 ## Utilities
 

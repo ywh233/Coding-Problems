@@ -4,7 +4,7 @@ package model;
  * Created by yuwei on 15/9/16.
  * Project: CodingProblems
  */
-public class BinaryTreeNode<T> {
+public class BinaryTreeNode<T> implements Unboxable<T> {
     public T data;
     public BinaryTreeNode<T> left, right;
 
@@ -13,5 +13,10 @@ public class BinaryTreeNode<T> {
         this.data = data;
         this.left = left;
         this.right = right;
+    }
+
+    @Override
+    public T unbox() {
+        return data;
     }
 }

@@ -4,7 +4,7 @@ package model;
  * Created by yuwei on 15/9/17.
  * Project: CodingProblems
  */
-public abstract class TrieNode<T> {
+public abstract class TrieNode<T> implements Unboxable<T> {
     public final T value;
     public boolean hasContent;
 
@@ -18,5 +18,10 @@ public abstract class TrieNode<T> {
 
     public boolean isLeaf() {
         return countChildren() == 0;
+    }
+
+    @Override
+    public T unbox() {
+        return value;
     }
 }

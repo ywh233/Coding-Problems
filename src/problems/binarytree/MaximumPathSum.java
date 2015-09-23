@@ -7,6 +7,14 @@ import model.BinaryTreeNode;
  * Project: CodingProblems
  */
 public class MaximumPathSum {
+    /*
+        IMS[null] = SMS[null] = 0
+
+        IMS[n] = max{IMS[n.left], IMS[n.right], SMS[n.left] + n.val + SMS[n.right]}
+        SMS[n] = n.val + max{SMS[n.left], SMS[n.right]}
+
+        max[n] = max{IMS[n], SMS[n]}
+     */
     public static int maximumPathSum(BinaryTreeNode<Integer> root) {
         BestPathInfo info = findBestPathSum(root);
         return Math.max(info.innerBestSum, info.singleBestSum);
